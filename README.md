@@ -1,5 +1,7 @@
 # DesafioQA
 
+Projeto feito em JAVA
+
 Antes de olhar o projeto leia essas informações:
 
 Relatório HTML encontra-se na pasta DesafioQA/target/report-html/ e as screenshots encontram-se na pasta DesafioQA/target/screenshot/
