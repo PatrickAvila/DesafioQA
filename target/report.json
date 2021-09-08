@@ -1,0 +1,1428 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3981674300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 555397800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:02.074Z",
+        "line": 12,
+        "name": "Cadastrar um usuário",
+        "description": "",
+        "id": "cadastro-de-usuários;cadastrar-um-usuário",
+        "after": [
+          {
+            "result": {
+              "duration": 593479300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 264111700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "desejo cadastrar um usuário com nome: Patrick Avila, email: patrick_avila99@outlook.com e senha: 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patrick Avila",
+                  "offset": 38
+                },
+                {
+                  "val": "patrick_avila99@outlook.com",
+                  "offset": 60
+                },
+                {
+                  "val": "12345678",
+                  "offset": 97
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 395097700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 86575500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "valido usuário cadastrado com id: 1, nome: Patrick Avila, email: patrick_avila99@outlook.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 34
+                },
+                {
+                  "val": "Patrick Avila",
+                  "offset": 43
+                },
+                {
+                  "val": "patrick_avila99@outlook.com",
+                  "offset": 65
+                }
+              ],
+              "location": "InserirContasSteps.receboAMensagem(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 347570800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3282280100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 449881900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:08.322Z",
+        "line": 23,
+        "name": "Validar os campos obrigatorios",
+        "description": "",
+        "id": "cadastro-de-usuários;validar-os-campos-obrigatorios;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 582022400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 259016700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "desejo cadastrar um usuário com nome: , email: patrick_avila99@outlook.com e senha: 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 38
+                },
+                {
+                  "val": "patrick_avila99@outlook.com",
+                  "offset": 47
+                },
+                {
+                  "val": "12345678",
+                  "offset": 84
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 422558000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 238200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "valido mensagem de campo obrigatório para Nome",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nome",
+                  "offset": 42
+                }
+              ],
+              "location": "InserirContasSteps.validoMensagemCampoObrigatorio(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 411820400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3272865600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 460439500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:13.735Z",
+        "line": 24,
+        "name": "Validar os campos obrigatorios",
+        "description": "",
+        "id": "cadastro-de-usuários;validar-os-campos-obrigatorios;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 621719500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 254140500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "desejo cadastrar um usuário com nome: Patrick Avila, email:  e senha: 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patrick Avila",
+                  "offset": 38
+                },
+                {
+                  "val": "",
+                  "offset": 60
+                },
+                {
+                  "val": "12345678",
+                  "offset": 70
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 422169600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 199700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "valido mensagem de campo obrigatório para E-mail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail",
+                  "offset": 42
+                }
+              ],
+              "location": "InserirContasSteps.validoMensagemCampoObrigatorio(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 408294500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3283927000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 443265000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:19.178Z",
+        "line": 25,
+        "name": "Validar os campos obrigatorios",
+        "description": "",
+        "id": "cadastro-de-usuários;validar-os-campos-obrigatorios;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 602190600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 234653900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "desejo cadastrar um usuário com nome: Patrick Avila, email: patrick_avila99@outlook.com e senha: ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patrick Avila",
+                  "offset": 38
+                },
+                {
+                  "val": "patrick_avila99@outlook.com",
+                  "offset": 60
+                },
+                {
+                  "val": "",
+                  "offset": 97
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 445643500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 203600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "valido mensagem de campo obrigatório para Senha",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Senha",
+                  "offset": 42
+                }
+              ],
+              "location": "InserirContasSteps.validoMensagemCampoObrigatorio(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 414835400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3252536500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 449292300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:24.605Z",
+        "line": 26,
+        "name": "Validar os campos obrigatorios",
+        "description": "",
+        "id": "cadastro-de-usuários;validar-os-campos-obrigatorios;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 577225000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 231163500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "desejo cadastrar um usuário com nome: , email:  e senha: ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 38
+                },
+                {
+                  "val": "",
+                  "offset": 47
+                },
+                {
+                  "val": "",
+                  "offset": 57
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 433118100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 207800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "valido mensagem de campo obrigatório para Todos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Todos",
+                  "offset": 42
+                }
+              ],
+              "location": "InserirContasSteps.validoMensagemCampoObrigatorio(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 402625700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3276115100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 449163100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:29.953Z",
+        "line": 35,
+        "name": "Validar informações validas",
+        "description": "",
+        "id": "cadastro-de-usuários;validar-informações-validas;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 592542800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 263760700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "desejo cadastrar um usuário com nome: Patrick, email: patrick_avila99@outlook.com e senha: 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patrick",
+                  "offset": 38
+                },
+                {
+                  "val": "patrick_avila99@outlook.com",
+                  "offset": 54
+                },
+                {
+                  "val": "12345678",
+                  "offset": 91
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 453471700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 310000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "valido mensagem de informação valida no campo Nome",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nome",
+                  "offset": 46
+                }
+              ],
+              "location": "InserirContasSteps.validoMensagemInformaçõesValidas(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 408558200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3266966700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 453498800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:35.402Z",
+        "line": 36,
+        "name": "Validar informações validas",
+        "description": "",
+        "id": "cadastro-de-usuários;validar-informações-validas;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 590580300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 252075100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "desejo cadastrar um usuário com nome: Patrick Avila, email: patrick_avila99@outlook.c e senha: 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patrick Avila",
+                  "offset": 38
+                },
+                {
+                  "val": "patrick_avila99@outlook.c",
+                  "offset": 60
+                },
+                {
+                  "val": "12345678",
+                  "offset": 95
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 422707200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 270900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "valido mensagem de informação valida no campo E-mail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail",
+                  "offset": 46
+                }
+              ],
+              "location": "InserirContasSteps.validoMensagemInformaçõesValidas(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 415328700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3249536100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 524295500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:40.805Z",
+        "line": 37,
+        "name": "Validar informações validas",
+        "description": "",
+        "id": "cadastro-de-usuários;validar-informações-validas;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 604760300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 250304500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "desejo cadastrar um usuário com nome: Patrick Avila, email: patrick_avila99@outlook.com e senha: 1234567",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patrick Avila",
+                  "offset": 38
+                },
+                {
+                  "val": "patrick_avila99@outlook.com",
+                  "offset": 60
+                },
+                {
+                  "val": "1234567",
+                  "offset": 97
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 524147800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 194300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "valido mensagem de informação valida no campo Senha",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Senha",
+                  "offset": 46
+                }
+              ],
+              "location": "InserirContasSteps.validoMensagemInformaçõesValidas(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 497923500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3242269200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 533059600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:46.459Z",
+        "line": 38,
+        "name": "Validar informações validas",
+        "description": "",
+        "id": "cadastro-de-usuários;validar-informações-validas;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 604710500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 235780700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "desejo cadastrar um usuário com nome: Patrick, email: patrick_avila99@outlook.c e senha: 1234567",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patrick",
+                  "offset": 38
+                },
+                {
+                  "val": "patrick_avila99@outlook.c",
+                  "offset": 54
+                },
+                {
+                  "val": "1234567",
+                  "offset": 89
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 514193500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 313600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "valido mensagem de informação valida no campo Todos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Todos",
+                  "offset": 46
+                }
+              ],
+              "location": "InserirContasSteps.validoMensagemInformaçõesValidas(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 511210700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3260132000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso Url",
+            "match": {
+              "location": "InserirContasSteps.acessoUrl()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 530945900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-08T17:28:52.103Z",
+        "line": 40,
+        "name": "Cadastrar dois usuários e excluir o primeiro",
+        "description": "",
+        "id": "cadastro-de-usuários;cadastrar-dois-usuários-e-excluir-o-primeiro",
+        "after": [
+          {
+            "result": {
+              "duration": 598002600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 276122000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "desejo cadastrar um usuário com nome: Patrick Avila, email: patrick_avila99@outlook.com e senha: 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patrick Avila",
+                  "offset": 38
+                },
+                {
+                  "val": "patrick_avila99@outlook.com",
+                  "offset": 60
+                },
+                {
+                  "val": "12345678",
+                  "offset": 97
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 396557300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 213563600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "desejo cadastrar um usuário com nome: Adriano Avila, email: adriano_avila93@outlook.com e senha: 123456789",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Adriano Avila",
+                  "offset": 38
+                },
+                {
+                  "val": "adriano_avila93@outlook.com",
+                  "offset": 60
+                },
+                {
+                  "val": "123456789",
+                  "offset": 97
+                }
+              ],
+              "location": "InserirContasSteps.queDesejoAdicionarUmaConta(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 389910900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 94770700,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "valido usuário cadastrado com id: 1, nome: Patrick Avila, email: patrick_avila99@outlook.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 34
+                },
+                {
+                  "val": "Patrick Avila",
+                  "offset": 43
+                },
+                {
+                  "val": "patrick_avila99@outlook.com",
+                  "offset": 65
+                }
+              ],
+              "location": "InserirContasSteps.receboAMensagem(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 356185000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 94049700,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "valido usuário cadastrado com id: 2, nome: Adriano Avila, email: adriano_avila93@outlook.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 34
+                },
+                {
+                  "val": "Adriano Avila",
+                  "offset": 43
+                },
+                {
+                  "val": "adriano_avila93@outlook.com",
+                  "offset": 65
+                }
+              ],
+              "location": "InserirContasSteps.receboAMensagem(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 340437500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 46353700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "excluo usuário com id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                }
+              ],
+              "location": "InserirContasSteps.excluoUsuario(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 393144100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Mas "
+          },
+          {
+            "result": {
+              "duration": 49746400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "valido usuário cadastrado com id: 2, nome: Adriano Avila, email: adriano_avila93@outlook.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 34
+                },
+                {
+                  "val": "Adriano Avila",
+                  "offset": 43
+                },
+                {
+                  "val": "adriano_avila93@outlook.com",
+                  "offset": 65
+                }
+              ],
+              "location": "InserirContasSteps.receboAMensagem(String,String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 356691900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "InserirContasSteps.screenshot(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      }
+    ],
+    "name": "Cadastro_de_usuários",
+    "description": "\tEU COMO usuário do sistema.\n\tDESEJO realizar o cadastro de novos usuários.\n\tPARA QUE seja possível armazenar e gerenciar seus dados.",
+    "id": "cadastro-de-usuários",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/inserir_conta.feature",
+    "tags": [
+      {
+        "name": "@funcionais",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
